@@ -113,7 +113,7 @@ const createFieldProps = (
     if (format === null) {
       return value
     }
-    const defaultFormattedValue = value == null ? '' : value
+    const defaultFormattedValue = value === undefined ? '' : value
     return format ? format(value, name) : defaultFormattedValue
   }
 

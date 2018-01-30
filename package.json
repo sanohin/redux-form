@@ -1,5 +1,5 @@
 {
-  "name": "redux-form",
+  "name": "redux-form-nullable",
   "version": "7.2.1",
   "description":
     "A higher order component decorator for forms using Redux and React",
@@ -42,8 +42,7 @@
     "example:syncValidation": "form=syncValidation npm run example",
     "example:wizard": "form=wizard npm run example",
     "precommit": "lint-staged",
-    "prepublish":
-      "npm run lint && npm run test:cov && npm run test:flow && npm run clean && npm run build",
+    "prepublish": "npm run clean && npm run build",
     "test": "cross-env NODE_ENV=test jest --runInBand",
     "test:flow": "flow check",
     "test:watch": "npm test -- --watch",
